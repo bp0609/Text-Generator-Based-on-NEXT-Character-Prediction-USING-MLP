@@ -264,23 +264,23 @@ elif(corpus == 'Shakespear'):
         type_text(input_text)
         if model_option == 'Trained':
             if(option1 == '10' and option2 == '60'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear10_60.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear10_60.pth", map_location = device))
             elif(option1 == '10' and option2 == '150'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear10_150.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear10_150.pth", map_location = device))
             elif(option1 == '25' and option2 == '60'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear25_60.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear25_60.pth", map_location = device))
             elif(option1 == '25' and option2 == '150'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear25_150.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear25_150.pth", map_location = device))
             elif(option1 == '50' and option2 == '60'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear50_60.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear50_60.pth", map_location = device))
             elif(option1 == '50' and option2 == '150'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear50_150.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear50_150.pth", map_location = device))
             elif(option1 == '100' and option2 == '60'):
-                model.load_state_dict(torch.load("models/shapespear model/shakespear100_60.pth", map_location = device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear100_60.pth", map_location = device))
             else:
-                model.load_state_dict(torch.load("models/shapespear model/shakespear100_150.pth", map_location =device))
+                model.load_state_dict(torch.load("models/shakespear model/shakespear100_150.pth", map_location =device))
         else:
-            model.load_state_dict(torch.load("models/shapespear model/shakespear_untrained.pth", map_location =device))
+            model.load_state_dict(torch.load("models/shakespear model/shakespear_untrained.pth", map_location =device))
                 
         gen_text = generate_text(model, itos, stoi, block_size, num_chars, input_text)
         st.subheader("Generated Text")
