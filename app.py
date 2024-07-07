@@ -49,7 +49,7 @@ class NextChar(nn.Module):
         x = self.lin2(x)
         return x
 
-st.write("# Neural Network based Text Generator")
+st.write("## Neural Network based Text Generator using Next Token Prediction")
 
 st.sidebar.title("Model Information")
 
