@@ -1,6 +1,16 @@
-# Text-Generator-Based-on-NEXT-Character-Prediction-USING-MLP
+# Text Generator Based on NEXT Character Prediction Using MLP 🔡✨
 
-This project, undertaken by the "Matrix Minds" group, was part of Professor Nipun Batra's machine learning course. The goal was to develop a text generation model using neural networks. Our main objective was to build and optimize a basic neural network architecture capable of predicting the next characters based on previous sequences (block size). The model's parameters, such as embedding size and block size, can be customized through the accompanying Streamlit application.
+Welcome to Text Generator Based on NEXT Character Prediction Using MLP! 🚀 This project explores the exciting world of neural networks for text generation, using Multi-Layer Perceptrons (MLP) to predict the next character in a sequence. Whether you're a Shakespeare enthusiast or just love experimenting with AI, this tool lets you dive deep into the magic of text generation.
+
+## 🌟 Features
+
+- **Streamlit Web App**: A sleek, user-friendly interface to interact with the model.
+- **Model Selection**: Switch between trained models and configure hyperparameters like block size and embedding dimensions.
+- **Dynamic Text Generation**: Generate text on-the-fly based on user-provided input.
+- **Multiple Datasets**: Trained on various datasets, including a Shakespeare-specific corpus for poetic flair.
+- **Interactive Training Insights**: Delve into training details through dedicated Jupyter notebooks.
+
+---
 
 ## Streamlit Application Link:-
 [Text Generation Model](https://next-character-predictor-using-mlp.streamlit.app/)
@@ -83,6 +93,47 @@ pip install numpy torch matplotlib streamlit
 
 4. Customize the model parameters (embedding size and block size) using the Streamlit interface and start generating text.
 
+---
+
+## 🏗️ Project Structure
+
+```plaintext
+📁 Text-Generator-Based-on-NEXT-Character-Prediction-USING-MLP
+├── app.py                # Streamlit app for user interaction
+├── model.ipynb           # Jupyter notebook for model training
+├── shakespear_model.ipynb # Notebook for Shakespeare-specific model
+├── models/               # Directory of pre-trained model files
+├── text files/           # Training datasets (text files)
+├── README.md             # This sexy readme ✨
+├── requirements.txt      # Dependencies list
+└── SECURITY.md           # Security-related documentation
+```
+
+---
+
+## 📊 Key Components
+
+### **Streamlit Interface**
+- Select your dataset, configure model parameters, and input seed text.
+- View real-time generated text and adjust settings for experimentation.
+
+### **Model Training**
+- **Notebook**: Use `model.ipynb` for general datasets or `shakespear_model.ipynb` for the Shakespeare dataset.
+- **Optimization**: Models are trained with MLP architecture and a cross-entropy loss function.
+
+### **Text Generation**
+The `generate_text` function predicts the next character based on the input sequence, using the model's learned patterns.
+
+---
+
+
+## 🌍 Datasets and Models
+We provide pre-trained models and datasets for instant exploration, including:
+- **Shakespeare Corpus**: Dive into poetic text generation.
+- **Custom Datasets**: Use your own text files for personalized models.
+
+---
+
 ## Results
 
 The training loss for different configurations of embedding size and block size is visualized below:
@@ -104,11 +155,3 @@ The training loss for different configurations of embedding size and block size 
 ## Conclusion
 
 This project successfully demonstrates the capability of a basic neural network to generate coherent text based on preceding sequences. By fine-tuning the model's parameters, we achieved notable improvements in text generation quality. Further experimentation with more advanced architectures and larger datasets could yield even better results.
-
-## Contributors
-
-- Matrix Minds Group
-    Group Members:
-    - [Bhavik](https://github.com/Bp0306)
-    - [Jinil](https://github.com/Zeenu03)
-    - [Pranav](https://github.com/imPranav14)
